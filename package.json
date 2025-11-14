@@ -1,0 +1,32 @@
+{
+  "name": "Experta-v2",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "concurrently \"npm run start:dev:billing\" \"npm run start:dev:wallet\" \"npm run start:dev:expert-ranking\" \"npm run start:dev:aicore\" \"npm run start:dev:profiles\" \"npm run start:dev:bookings\" \"npm run start:dev:feedback\" \"npm run start:dev:posts\" \"npm run start:dev:authentication\" \"npm run start:dev:call-server\" \"npm run start:dev:messages\" \"npm run start:dev:notifications\"",
+    "install:workspaces": "npm install --workspace=billing && npm install --workspace=wallet && npm install --workspace=expert-ranking && npm install --workspace=aicore && npm install --workspace=profiles && npm install --workspace=bookings && npm install --workspace=feedback && npm install --workspace=posts && npm install --workspace=authentication && npm install --workspace=call-server && npm install --workspace=messages && npm install --workspace=notifications",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.0"
+  },
+  "workspaces": [
+    "billing",
+    "wallet",
+    "expert-ranking",
+    "aicore",
+    "profiles",
+    "bookings",
+    "feedback",
+    "posts",
+    "authentication",
+    "call-server",
+    "messages",
+    "notifications"
+  ]
+}
+

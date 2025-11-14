@@ -1,0 +1,11 @@
+{
+  "name": "spring-service",
+  "version": "1.0.0",
+  "description": "Spring backend service",
+  "scripts": {
+    "start": "./mvnw spring-boot:run",
+    "build": "./mvnw clean package",
+    "test": "./mvnw test"
+  },
+  "private": true
+}
